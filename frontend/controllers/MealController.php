@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use Yii;
 use common\models\Meal;
 use yii\data\ActiveDataProvider;
+use yii\db\Query;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -44,6 +45,7 @@ class MealController extends Controller
             }
         }
         arsort($arr5);
+
         foreach ($arr5 as $key=>$val) {
             array_push($arr6, $val[1]);
         }

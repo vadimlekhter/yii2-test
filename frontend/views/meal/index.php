@@ -13,10 +13,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Create Meal', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
-
     <?php Pjax::begin(); ?>
 
     <?= GridView::widget([
@@ -31,8 +27,6 @@ $this->params['breadcrumbs'][] = $this->title;
             'ingr_3',
             'ingr_4',
             'ingr_5',
-
-            ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 
